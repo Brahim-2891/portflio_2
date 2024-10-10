@@ -1,122 +1,102 @@
-/* Global Styles */
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
+
 nav ul li {
-    margin: 0 15px;
+    margin-right: 20px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image.jpg') no-repeat center center/cover;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.social-icons a img {
+    width: 24px;
+    margin-left: 10px;
 }
-.hero h1 {
-    font-size: 3rem;
+
+/* Main Section */
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.main-section .content {
+    max-width: 500px;
+}
+
+.main-section h1 {
+    font-size: 48px;
     margin: 0;
 }
-.hero p {
-    font-size: 1.2rem;
+
+.main-section p {
+    font-size: 18px;
+    margin: 20px 0;
 }
 
-/* Projects Section */
-#projects {
-    padding: 50px;
-    background-color: #f4f4f4;
+button {
+    padding: 10px 20px;
+    background-color: #39FF14;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+button:hover {
+    background-color: #33cc12;
 }
-.project-item {
-    width: 45%;
-    background-color: white;
-    padding: 20px;
+
+/* Profile Photo */
+.profile-photo img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Company Logos Section */
+.companies {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.companies h2 {
+    font-size: 24px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.project-item h3 {
-    margin-top: 0;
 }
 
-/* Skills Section */
-#skills {
-    padding: 50px;
-    background-color: #fff;
+.logos img {
+    width: 120px;
+    margin: 0 10px;
 }
+
 .skills-list {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-}
-
-/* Contact Section */
-#contact {
-    padding: 50px;
-    background-color: #f4f4f4;
-}
-#contact p {
-    font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.profile-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-top: 20px;
-}
-
-
-@media (max-width: 768px) {
-    .project-item {
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
 }
